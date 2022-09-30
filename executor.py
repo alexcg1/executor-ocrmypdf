@@ -7,4 +7,4 @@ class OCRMyPDF(Executor):
     @requests
     def extract_text(self, docs: DocumentArray, **kwargs):
         for doc in docs:
-            ocrmypdf.ocr(input_file=doc.uri, output_file=doc.uri, force_ocr=True)
+            ocrmypdf.ocr(input_file=doc.uri, output_file=doc.uri, force_ocr=True, optimize=0)
