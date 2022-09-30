@@ -1,0 +1,8 @@
+jtype: OCRMyPDF
+py_modules:
+  - executor.py
+metas:
+  name: OCRMyPDF
+  description: Use ocrmypdf library to add a text layer to image-only PDFs
+  url: https://github.com/alexcg1/executor-ocrmypdf
+  keywords: [pdf, ocr, scan, text]
