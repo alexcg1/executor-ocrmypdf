@@ -1,6 +1,7 @@
 FROM jinaai/jina:latest
 
-RUN apt-get update && apt-get install tesseract-ocr tesseract-ocr-eng
+RUN apt-get update &&\
+    apt-get install -y tesseract-ocr tesseract-ocr-eng
 
 # install requirements before copying the workspace
 COPY requirements.txt /requirements.txt
